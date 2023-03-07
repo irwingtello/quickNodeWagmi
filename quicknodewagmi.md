@@ -262,6 +262,8 @@ function App(props) {
 
 export default App;
 ```
+ALT: Navbar for connecting and disconnecting from the actual network
+
 Lines 3-8: Import dependencies from Wagmi.sh.
 
 Line 5: This hook returns the current chain account associated with the user's connected wallet.
@@ -431,6 +433,8 @@ function Navbar(props) {
 }
 export default Navbar;
 ```
+ALT: NavBar directs you to the relevant block explorer.
+
 Lines 22-28: Import dependencies from Wagmi.sh.
 
 Line 42: The address variable holds the address of the user's connected wallet, obtained from the useAccount hook.
@@ -664,6 +668,9 @@ We recommend to create the function in specific folder called "functions.js",to 
         }
   }
   ```
+
+  ALT : Function for retrieving the actual smart contract address from the blockchain.
+
 Lines 21-27: Initialize the state variable textBoxes with an array of objects that contain the imageURLs.
 
 Line 28: Define the isConnected variable using the useAccount hook from wagmi.
